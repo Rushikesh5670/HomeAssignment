@@ -10,7 +10,7 @@ import { CategoryFormComponent } from './components/category-form/category-form.
 import { WelcomeComponent } from './components/welcome/welcome.component';
 import { FormsModule } from '@angular/forms';
 
-const route : routes = [
+const route : Routes = [
   {path : '',component : WelcomeComponent},
   {path : 'products',component : ProductListComponent},
   {path : 'productForm',component : ProductFormComponent},
