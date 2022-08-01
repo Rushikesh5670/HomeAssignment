@@ -1,0 +1,54 @@
+<div class="container">
+    <form #productForm = "ngForm" (ngSubmit) = "onSubmit()" >
+        <div class="row">
+            <div class="col sm-3"><label>Product Id</label></div>
+            <div class="col sm-6"><input type="text" name="productId" [(ngModel)] = "product.product_id" /></div>
+        </div>
+        &nbsp;
+        <div class="row">
+            <div class="col sm-3"><label>Product Name</label></div>
+            <div class="col sm-6"><input type="text" name="productName" [(ngModel)] = "product.product_name" /></div>
+        </div>
+        &nbsp;
+        <div class="row">
+            <div class="col sm-3"><label>Description</label></div>
+            <div class="col sm-6"><input type="text" name="description" [(ngModel)] = "product.description"/></div>
+        </div>
+        &nbsp;
+        <div class="row">
+            <div class="col sm-3"><label>Unit Price</label></div>
+            <div class="col sm-6"><input type="text" name="unitPrice" [(ngModel)] = "product.unit_price"/></div>
+        </div>
+        &nbsp;
+        <div class="row">
+            <div class="col sm-3"><label>Image URL</label></div>
+            <div class="col sm-6"><input type="text" name="imageURL" [(ngModel)] = "product.image_url"/></div>
+        </div>
+        &nbsp;
+        <div class="row">
+            <div class="col sm-3"><label>Units in stock</label></div>
+            <div class="col sm-6"><input type="text" name="unitsInStock" [(ngModel)] = "product.units_in_stock"/></div>
+        </div>
+        &nbsp;
+        <div class="row">
+            <div class="col sm-3"><label>Date created</label></div>
+            <div class="col sm-6"><input type="text" name="commission" [(ngModel)] = "product.date_created"/></div>
+        </div>
+        &nbsp;
+        <div class="row">
+            <div class="col sm-3"><label>Last updated</label></div>
+            <div class="col sm-6"><input type="text" name="lastUpdated" [(ngModel)] = "product.last_updated"/></div>
+        </div>
+        &nbsp;
+        <div class="row">
+            <div class="col sm-3"><label>Category Id</label></div>
+            <div class="col sm-6"><input type="text" name="categoryId" [(ngModel)] = "product.category_id"/></div>
+        </div>
+        &nbsp;
+        <div class="row">
+            <div class="col sm-3">
+            <input type="submit" name="submit" value="submit" class="btn btn-primary" />
+            </div>
+        </div>
+    </form>
+</div>
